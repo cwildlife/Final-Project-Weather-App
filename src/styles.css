@@ -1,0 +1,242 @@
+header{
+    border-bottom: 1px dashed beige;
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(90deg, rgb(255, 221, 225) 11.2%, rgb(255, 255, 255) 92.2%);
+    display: block;
+    font-family:"Comic Neue", cursive;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+#app-container{
+    background-image: url("../images/background1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 1px dashed rgb(253, 190, 224);
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    line-height: 10px;
+    margin: 5px 5px 5px 5px;
+}
+
+/* Form */
+#search-form {
+    text-align: center;
+    margin: 5px 5px 5px 5px;
+    border-radius: 10px;
+    background-color:#ffb5b5;
+    padding: 8px 8px 8px 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#city-input{
+    color:#2470a0;
+    background-color: #F9E1DF;
+    border: none;
+    border-radius: 5px;
+    font-family: "Comic Neue", cursive;
+    font-weight: 800;
+    font-style: italic;
+    margin: 5px auto;
+    padding: 5px 5px 5px 5px;
+    width: 80%;
+}
+#city-input::placeholder{
+    color: #407088;
+}
+
+#city-search-button{
+    border: none;
+    border-radius: 5px;
+    background-color: #F9E1DF;
+    color:#407088;
+    font-family: "Comic Neue", cursive;
+    font-weight: 800;
+    margin: 0 auto;
+    padding: 5px 5px 5px 5px;
+    
+}
+/* Date & Time*/
+#date-time {
+    color: #2470a0;
+    font-family: "Comic Neue", cursive;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 15px;
+    display: flex;
+    justify-content:center;
+    margin: 1px 1px;
+    padding: 5px 2px;
+    line-height: 1.0;
+}
+
+/* City, Temp & Emoji */
+.city-name{
+    font-weight: 800;
+    font-style: normal;
+    color:#2470a0;
+    font-family: "Henny Penny", system-ui; 
+    padding: 20px 0;
+    margin-bottom: 0;
+    font-size: 50px;
+    font-weight:800;
+    text-align: center;
+}
+
+.emoji-temp-unit-container {
+    font-family: "Henny Penny", system-ui; 
+    font-style: normal;
+    color: #2470a0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    gap: 8px;
+    margin: 5px 5px 5px 5px;
+    padding: 2px 2px;
+    text-align: center;
+}
+
+.emoji{
+    position: relative;
+    top: -10px;
+    left: -5px;
+    font-size: 50px;
+}
+
+.temperature-value{
+    font-size: 55px;
+    position: relative;
+    top: -40px;
+    left: -5px;
+    font-weight: 800;
+}
+
+.unit{
+    position: relative;
+    top: -65px; 
+    left: -5px;
+    font-size: 20px;
+    font-weight: 700;   
+}
+
+/*Conditions, Humidity & Wind-Speed*/
+#conditions-container{
+    color: #2470a0;
+    font-family: "Comic Neue", cursive;
+    font-style: normal;
+    font-size: 15px; 
+    display: block;
+    padding: 10px 10px 10px 10px;
+    line-height: 20px;
+    margin-top: -30px;
+    margin-left: 0;
+    text-align: left;
+}
+
+#conditions-description{
+    text-transform: capitalize;
+    font-weight: 700;
+    justify-content: flex-start;
+}
+
+.humidity-wind-data{
+    font-weight: 400;
+    color:#2470a0;
+}
+
+#humidity{
+    font-weight: 800;    
+}
+
+#wind-speed{
+    font-weight: 800;
+}
+
+strong{
+    color:#2470a0;
+}
+/*Forecast */
+.weather-forecast{
+    font-family: "Comic Neue", cursive;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.weather-forecast-date{
+    font-family: "Henny Penny", system-ui;
+    color: #407088;
+    font-weight: 600;
+    text-align: center;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 1px 1px;
+    margin-bottom: 10px;
+}
+.weather-forecast-icon{
+    font-size: 38px;
+    text-align: center;
+    padding: 10px 10px;
+}
+.weather-forecast-temperatures{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.weather-forecast-temperature{
+    padding: 5px 5px;
+    color: #407088;
+    font-weight: 400;
+}
+
+footer{
+    border-top: 1px dashed beige;
+    color:#2470a0;
+    font-family: "Comic Neue", cursive;
+    font-weight: 600;
+    font-size: 10px;
+    display:block;
+    text-align:center;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+a{
+    color: #407088;
+    text-decoration: underline;
+    font-weight:600;
+    font-size: 10px;
+}
+
+
+/* Fonts used*/
+/*
+henny-penny-regular {
+  font-family: "Henny Penny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+comic-neue-light {
+  font-family: "Comic Neue", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+comic-neue-light-italic {
+  font-family: "Comic Neue", cursive;
+  font-weight: 300;
+  font-style: italic;
+}
+*/
