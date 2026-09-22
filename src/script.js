@@ -22,7 +22,7 @@ function updateWeather(response){
   getForecast(response.data.city);
 }
 
-function formatDate(date){
+function formatDate(date) {
   let minutes = date.getMinutes();
   let hours= date.getHours();
   let days=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -36,7 +36,7 @@ function formatDate(date){
 
 function searchCity(city){
 let apiKey="b94o8b93a9f0455cftd053151d5ee87d";
-let apiUrl=`https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+let apiUrl=`https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
 axios.get(apiUrl).then(updateWeather);
 }
 
@@ -46,34 +46,47 @@ function doTheSearch(event){
     let searchInput=document.querySelector("#city-input");
     searchCity(searchInput.value);
 }
-function getForecast(city){
+
+function formatDay(timestamp) {
+  let date = new Date (timestamp * 1000);
+  let days = ["Sun","Mon","Tue","Wed","Thu", "Fri", "Sat"];
+
+  return days[date.getDay()];
+}
+
+function getForecast(city) {
     let apiKey ="b94o8b93a9f0455cftd053151d5ee87d";
-    let apiUrl ="https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&unitmetric"
-    axios.get(apiUrl).then(updateWeather);
+    let apiUrl `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(displayForecast);
 }
 
 function displayForecast(response){
-let days = ["Sat", "Sun", "Mon", "Tue", "Wed"];
-let forecastHTML =""
+let forecastHTML ="";
 
-days.forEach (function (day){
-  forecastHTML = forecastHTML + `
+response.data.daily.forEach (function (day, index){
+  if (index <6){
+  forecastHTML = 
+  forecastHTML + 
+  `
    <div class="weather-forecast-day">
-                    <div class="weather-forecast-date"> ${day} </div>
-                    <div class="weather-forecast-icon"> 🌩️</div>
+                    <div class="weather-forecast-date">${formatDay(day.time)}</div>
+                    <div class="weather-forecast-icon">
+                    <img src ="${day.condition.icon_url}"/>
+                    </div>
                     <div class="weather-forecast-temperatures">
-                        <div class="weather-forecast-temperature"> <strong> 16℃ </strong></div>
-                        <div class="weather-forecast-temperature"> 9℃ </div>
+                        <div class="weather-forecast-temperature"><strong>${Math.round(day.temperature.maximum)}℃</strong></div>
+                        <div class="weather-forecast-temperature">${Math.round(day.temperature.minimum)}℃</div>
                     </div>
                 </div>
                 `;
+}
 });
 
   let forecastElement =document.querySelector("#forecast");
   forecastElement.innerHTML=forecastHTML; 
 }
+
 let searchFormElement=document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", doTheSearch);
 
 searchCity("Dronten");
-displayForecast();
