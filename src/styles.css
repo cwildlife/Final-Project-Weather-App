@@ -16,7 +16,7 @@ body{
 
 #app-container{
     background: #c4bbf0;
-    border: 1px dashed #363b4e;
+    border: 1px solid #363b4e;
     border-radius: 20px;
     padding: 5px 10px 10px 5px;
     line-height: 10px;
@@ -159,6 +159,7 @@ strong{
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
+    max-width: 600px;
 }
 
 .weather-forecast-date{
