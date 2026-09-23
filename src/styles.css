@@ -153,6 +153,7 @@ body{
 strong{
     color:#2470a0;
 }
+
 /*Forecast */
 .weather-forecast{
     font-family: "Comic Neue", cursive;
@@ -160,7 +161,7 @@ strong{
     flex-wrap:wrap;
     justify-content: space-evenly;
     line-height: 1.0;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
