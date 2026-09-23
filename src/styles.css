@@ -181,11 +181,13 @@ strong{
     padding: 1px 1px;
     margin-bottom: 10px;
 }
-.weather-forecast-icon{
-    font-size: 38px;
-    text-align: center;
-    padding: 10px 10px;
+.forecast-icon{
+    width: 5px;
+    height: 5px;
+    display: block;
+    margin: 0 auto;
 }
+
 .weather-forecast-temperatures{
     text-align: center;
     display: flex;
