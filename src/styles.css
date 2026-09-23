@@ -158,7 +158,7 @@ strong{
     font-family: "Comic Neue", cursive;
     display: flex;
     flex-wrap:wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 10px;
     margin-bottom: 20px;
 }
