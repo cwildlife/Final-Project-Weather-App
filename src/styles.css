@@ -159,7 +159,8 @@ strong{
 .weather-forecast{
     font-family: "Comic Neue", cursive;
     display: flex;
-    flex-wrap:wrap;
+    
+    flex-wrap:inherit;
     flex-direction: row;
     justify-content: space-evenly;
     line-height: 1.0;
