@@ -174,7 +174,8 @@ strong{
     text-align: center;
     line-height: 25px;
     font-size: 16px;
-    padding: 25px 5px;
+    padding: 5px 5px;
+    margin-top: 10px;
 }
 
 .forecast-icon{
