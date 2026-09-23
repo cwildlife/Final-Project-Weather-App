@@ -58,9 +58,9 @@ body{
     font-weight: 800;
     margin: 0 auto;
     padding: 5px 5px 5px 5px;
-    cursor: pointer;
-    
+    cursor: pointer;  
 }
+
 /* Date & Time*/
 #date-time {
     color: #2470a0;
@@ -81,7 +81,7 @@ body{
     font-style: normal;
     color:#2470a0;
     font-family: "Henny Penny", system-ui; 
-    padding: 20px 0;
+    padding: 20px 10px;
     margin-bottom: 0;
     font-size: 50px;
     font-weight:800;
@@ -104,6 +104,7 @@ body{
 
 .emoji{
     font-size: 80px;
+    margin-bottom: 12px;
 }
 
 .temperature-value{
@@ -114,6 +115,7 @@ body{
 .unit{
     font-size: 20px;
     font-weight: 700;   
+    margin-bottom: 35px;
 }
 
 /*Conditions, Humidity & Wind-Speed*/
@@ -127,7 +129,7 @@ body{
     line-height: 20px;
     margin-top: -30px;
     margin-left: 0;
-    text-align: left;
+    text-align: center;
 }
 
 #conditions-description{
