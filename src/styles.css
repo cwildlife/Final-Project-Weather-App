@@ -1,6 +1,6 @@
 header{
     border-bottom: 1px dashed #774181;
-    padding: 1px 1px;
+    padding: 1px;
     margin: 0;
 }
 
@@ -11,29 +11,28 @@ body{
     background-size: cover;
     display: block;
     font-family:"Comic Neue", cursive;
-    margin: 0 auto;
-    max-width: 600px;
-    padding: 20px 20px;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 20px;
     text-align: center;
 }
 
 #app-container{
     background: #fbeeff;
     border: 1px solid #774181;
-    box-shadow: -15px 18px 33px rgba(224, 199, 252, 0.3);
     border-radius: 20px;
     padding: 5px 10px 10px 5px;
-    line-height: 10px;
-    margin: 5px 5px 5px 5px;
+    line-height: 20px;
+    margin: 5px;
 }
 
 /* Form */
 #search-form {
     text-align: center;
-    margin: 5px 5px 5px 5px;
+    margin: 5px;
     border-radius: 10px;
     background-color:#774181;
-    padding: 8px 8px 8px 8px;
+    padding: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
@@ -46,7 +45,7 @@ body{
     font-weight: 800;
     font-style: italic;
     margin: 5px auto;
-    padding: 5px 5px 5px 5px;
+    padding: 5px;
     width: 80%;
 }
 #city-input::placeholder{
@@ -62,7 +61,7 @@ body{
     font-family: "Comic Neue", cursive;
     font-weight: 800;
     margin: 0 auto;
-    padding: 5px 5px 5px 5px;
+    padding: 5px;
     cursor: pointer;  
 }
 
@@ -75,7 +74,7 @@ body{
     font-size: 15px;
     display: flex;
     justify-content:center;
-    margin: 1px 1px;
+    margin: 1px;
     padding: 5px 2px;
     line-height: 1.0;
 }
@@ -89,8 +88,9 @@ body{
     padding: 20px 10px;
     margin-bottom: 0;
     font-size: 50px;
-    font-weight:800;
+    font-size: clamp(32px, 10vw, 50px);
     text-align: center;
+    
 }
 
 .emoji-temp-unit-container {
@@ -102,8 +102,8 @@ body{
     justify-content: center;
     align-items: center;
     gap: 8px;
-    margin: 5px 5px 5px 5px;
-    padding: 2px 2px;
+    margin: 5px;
+    padding: 2px;
     text-align: center;
 }
 
@@ -114,6 +114,7 @@ body{
 
 .temperature-value{
     font-size: 55px;
+    font-size: clamp(40px, 12vw, 55px);
     font-weight: 800;
 }
 
@@ -130,10 +131,10 @@ body{
     font-style: normal;
     font-size: 15px; 
     display: block;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     line-height: 20px;
-    margin-top: -30px;
-    margin-bottom: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: 0;
     text-align: left;
     border-bottom: 1px solid #774181;
@@ -180,14 +181,15 @@ strong{
     text-align: center;
     line-height: 25px;
     font-size: 15px;
-    padding: 1px 1px;
+    padding: 1px;
     margin-top: 10px;
 }
 
 .forecast-icon{
-    width: 100%; 
-    height: auto;
-    display: block;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin: 0 auto;
 }
 
 .weather-forecast-temperatures{
@@ -196,7 +198,7 @@ strong{
     justify-content: space-between;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 1px;
+    font-size: 15px;
 }
 
 .weather-forecast-temperature{
