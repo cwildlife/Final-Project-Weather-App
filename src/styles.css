@@ -22,7 +22,6 @@ body{
     border: 1px solid #774181;
     border-radius: 20px;
     padding: 5px 10px 10px 5px;
-    line-height: 60px;
     margin: 5px 5px 5px 5px;
     display: block;
     text-align: center;
@@ -87,11 +86,12 @@ body{
     font-style: normal;
     color:#413c69;
     font-family: "Henny Penny", system-ui; 
-    padding: 20px 10px;
+    padding: 10px 10px;
     margin-bottom: 0;
     font-size: 50px;
     font-size: clamp(32px, 10vw, 50px);
     text-align: center;
+    line-height: 55px;
     
 }
 
@@ -107,11 +107,12 @@ body{
     margin: 5px 5px 5px 5px;
     padding: 2px 2px 2px 2px;
     text-align: center;
+    line-height: 55px;
 }
 
 .emoji{
-    font-size: 80px;
-    margin-bottom: 12px;
+    font-size: 100px;
+    margin-bottom: 10px;
 }
 
 .temperature-value{
@@ -218,10 +219,10 @@ footer{
     font-size: 10px;
     display:block;
     text-align:center;
-    margin-top: 10px;
+    margin-top: 1px;
     margin-bottom: 1px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 a{
