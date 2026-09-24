@@ -17,6 +17,7 @@ body{
 #app-container{
     background: #c4bbf0;
     border: 1px solid #363b4e;
+    box-shadow: -15px 18px 33px rgba(224, 199, 252, 0.3);
     border-radius: 20px;
     padding: 5px 10px 10px 5px;
     line-height: 10px;
