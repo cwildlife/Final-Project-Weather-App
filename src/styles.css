@@ -1,5 +1,5 @@
 header{
-    border-bottom: 1px dashed #363b4e;
+    border-bottom: 1px dashed #4f3b78;
     padding: 1px 1px;
     margin: 0;
 }
@@ -48,6 +48,7 @@ body{
 }
 #city-input::placeholder{
     color: #407088;
+    background-color: #c4bbf0;
 }
 
 #city-search-button{
@@ -67,7 +68,7 @@ body{
     color: #2470a0;
     font-family: "Comic Neue", cursive;
     font-weight: 600;
-    font-style: italic;
+    font-style: normal;
     font-size: 15px;
     display: flex;
     justify-content:center;
@@ -202,7 +203,7 @@ strong{
 }
 
 footer{
-    border-top: 1px dashed #363b4e;
+    border-top: 1px dashed #4f3b78;
     color:#2470a0;
     font-family: "Comic Neue", cursive;
     font-weight: 600;
