@@ -1,11 +1,14 @@
 header{
-    border-bottom: 1px dashed #4f3b78;
+    border-bottom: 1px dashed #774181;
     padding: 1px 1px;
     margin: 0;
 }
 
 body{
-    background: #4f3b78;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: block;
     font-family:"Comic Neue", cursive;
     margin: 0 auto;
@@ -15,8 +18,8 @@ body{
 }
 
 #app-container{
-    background: #c4bbf0;
-    border: 1px solid #363b4e;
+    background: #fbeeff;
+    border: 1px solid #774181;
     box-shadow: -15px 18px 33px rgba(224, 199, 252, 0.3);
     border-radius: 20px;
     padding: 5px 10px 10px 5px;
@@ -29,14 +32,14 @@ body{
     text-align: center;
     margin: 5px 5px 5px 5px;
     border-radius: 10px;
-    background-color:#4f3b78;
+    background-color:#774181;
     padding: 8px 8px 8px 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 #city-input{
-    color:#2470a0;
-    background-color: #c4bbf0;
+    color:#4a47a3;
+    background-color:#fbeeff;
     border: none;
     border-radius: 5px;
     font-family: "Comic Neue", cursive;
@@ -47,15 +50,15 @@ body{
     width: 80%;
 }
 #city-input::placeholder{
-    color: #407088;
-    background-color: #c4bbf0;
+    color: #4a47a3;
+    background-color:#fbeeff;
 }
 
 #city-search-button{
     border: none;
     border-radius: 5px;
-    background-color: #c4bbf0;
-    color:#407088;
+    background-color: #fbeeff;
+    color:#4a47a3;
     font-family: "Comic Neue", cursive;
     font-weight: 800;
     margin: 0 auto;
@@ -65,7 +68,7 @@ body{
 
 /* Date & Time*/
 #date-time {
-    color: #2470a0;
+    color:#4a47a3;
     font-family: "Comic Neue", cursive;
     font-weight: 600;
     font-style: normal;
@@ -81,7 +84,7 @@ body{
 .city-name{
     font-weight: 800;
     font-style: normal;
-    color:#2470a0;
+    color:#413c69;
     font-family: "Henny Penny", system-ui; 
     padding: 20px 10px;
     margin-bottom: 0;
@@ -93,7 +96,7 @@ body{
 .emoji-temp-unit-container {
     font-family: "Henny Penny", system-ui; 
     font-style: normal;
-    color: #2470a0;
+    color: #413c69;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -122,7 +125,7 @@ body{
 
 /*Conditions, Humidity & Wind-Speed*/
 #conditions-container{
-    color: #2470a0;
+    color: #4a47a3;
     font-family: "Comic Neue", cursive;
     font-style: normal;
     font-size: 15px; 
@@ -133,6 +136,7 @@ body{
     margin-bottom: auto;
     margin-left: 0;
     text-align: left;
+    border-bottom: 1px solid #774181;
 }
 
 #conditions-description{
@@ -142,7 +146,7 @@ body{
 
 .humidity-wind-data{
     font-weight: 400;
-    color:#2470a0;
+    color:#4a47a3;
 }
 
 #humidity{
@@ -154,7 +158,7 @@ body{
 }
 
 strong{
-    color:#2470a0;
+    color:#4a47a3;
 }
 
 /*Forecast */
@@ -171,7 +175,7 @@ strong{
 
 .weather-forecast-date{
     font-family: "Henny Penny", system-ui;
-    color: #407088;
+    color: #4a47a3;
     font-weight: 600;
     text-align: center;
     line-height: 25px;
@@ -197,14 +201,14 @@ strong{
 
 .weather-forecast-temperature{
     padding: 5px 5px;
-    color: #407088;
+    color: #4a47a3;
     font-weight: 400;
     margin: 2px 2px;
 }
 
 footer{
-    border-top: 1px dashed #4f3b78;
-    color:#2470a0;
+    border-top: 1px dashed #774181;
+    color:#4a47a3;
     font-family: "Comic Neue", cursive;
     font-weight: 600;
     font-size: 10px;
@@ -217,7 +221,7 @@ footer{
 }
 
 a{
-    color: #407088;
+    color: #4a47a3;
     text-decoration: underline;
     font-style: italic;
     font-weight:800;
