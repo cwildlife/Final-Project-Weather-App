@@ -10,11 +10,11 @@ body{
     background-position: center;
     background-size: cover;
     display: block;
+    text-align: center; 
     font-family:"Comic Neue", cursive;
-    margin: 0;
-    max-width: 650px;
+    margin: 0 auto;
+    max-width: 600px;
     padding: 20px 20px 20px 20px;
-    text-align: center;
 }
 
 #app-container{
@@ -24,6 +24,8 @@ body{
     padding: 5px 10px 10px 5px;
     line-height: 20px;
     margin: 5px 5px 5px 5px;
+    display: block;
+    text-align: center;
 }
 
 /* Form */
